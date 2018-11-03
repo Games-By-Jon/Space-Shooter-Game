@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Scenes/ShellMenus/VideoLogoIntro.unity
+    guid: 535fd6d8048fb4911aabaa8dce080e76
+  - enabled: 1
+    path: Assets/_Scenes/ShellMenus/TitleMenu.unity
+    guid: a0ee745a4812749f383e2d221b938561
+  - enabled: 1
+    path: Assets/_Scenes/GameModes/SurvivalMode.unity
+    guid: 7e0939c63c7a5412e969a0b6162069f8
+  - enabled: 1
+    path: Assets/_Scenes/CampainLevels/LevelSelect.unity
+    guid: fbc611ae37f6e4652be34effb2fd539f
+  - enabled: 1
+    path: Assets/_Scenes/GameModes/ArcadeMode.unity
+    guid: dc8a75cc000ab44d79bdea8f39d67f4c
+  - enabled: 1
+    path: Assets/_Scenes/CampainLevels/CampaignTemp.unity
+    guid: b58dceb2988d74109bbd8a1518283671
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  m_configObjects: {}

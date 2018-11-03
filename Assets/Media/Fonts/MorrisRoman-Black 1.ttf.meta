@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: c699c3d4f2ce35744a43d66255a754b6
+timeCreated: 1478319209
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Morris Roman
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 00d8c7ff30a9a884b9908b56a109f6c3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
