@@ -22,11 +22,14 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuButtonManager : MonoBehaviour {
+	public GameManager gm;
 	public int cheatBtnPressedNum;
 	public GameObject cheatBtn;
 	public Canvas moreInfoCanvas;
 	public Canvas highScoresCanvas;
 	public Canvas privacyCanvas;
+	public Toggle godModeToggle;
+	public Toggle bigHeadModeToggle;
 
 	void Start(){
 		cheatBtn.SetActive(false);
@@ -92,6 +95,22 @@ public class MainMenuButtonManager : MonoBehaviour {
 			//Show cheat btn
 			Debug.Log("Cheats enabled!");	
 			cheatBtn.SetActive(true);
+		}
+	}
+
+	public void GodModeToggle(){
+		if(godModeToggle.isOn){
+			gm.isInvincible = true;
+		} else if (!godModeToggle.isOn){
+			gm.isInvincible = false;
+		}
+	}
+
+	public void BigHeadModeToggle(){
+		if(bigHeadModeToggle.isOn){
+			gm.isBigHeadMode = true;
+		} else if (!bigHeadModeToggle.isOn){
+			gm.isBigHeadMode = false;
 		}
 	}
 }

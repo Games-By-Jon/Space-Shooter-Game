@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour {
     /// Cheats bool actives
     /// </summary>
     public bool isInvincible = false;
+    public bool isBigHeadMode = false;
 	void Awake(){ 
         //Check if instance already exists
             if (instance == null)
