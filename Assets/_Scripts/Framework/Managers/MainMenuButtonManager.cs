@@ -28,6 +28,7 @@ public class MainMenuButtonManager : MonoBehaviour {
 	public Canvas moreInfoCanvas;
 	public Canvas highScoresCanvas;
 	public Canvas privacyCanvas;
+	public Canvas cheatMenuCanvas;
 	public Toggle godModeToggle;
 	public Toggle bigHeadModeToggle;
 
@@ -36,6 +37,7 @@ public class MainMenuButtonManager : MonoBehaviour {
 		moreInfoCanvas.enabled = false;
 		highScoresCanvas.enabled = false;
 		privacyCanvas.enabled = false;
+		cheatMenuCanvas.enabled = false;
 	}
 	public void LoadCampaignLevelSelectButton(){
 		SceneManager.LoadScene("LevelSelect");
@@ -70,6 +72,14 @@ public class MainMenuButtonManager : MonoBehaviour {
 
 	public void ClosePrivacuPolicy(){
 		privacyCanvas.enabled = false;
+	}
+
+	public void ShowCheatMenu(){
+		cheatMenuCanvas.enabled = true;
+	}
+
+	public void CloseCheatMenu(){
+		cheatMenuCanvas.enabled = false;
 	}
 
     public void PortfolioPage(){

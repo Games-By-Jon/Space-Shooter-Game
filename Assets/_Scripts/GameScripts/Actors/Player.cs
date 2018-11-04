@@ -40,6 +40,16 @@ public class Player : MonoBehaviour
 	public Image moveLeftBtn;
 	public Image moveRightBtn;
 
+    public bool isInvincible = false;
+
+    void Start(){
+       if(FindObjectOfType<GameManager>().isInvincible){
+           isInvincible = true;
+       } else {
+           isInvincible = false;
+       }
+    }
+
 
     void FixedUpdate(){
         GetComponent<Rigidbody2D>().velocity = new Vector2(dx * movementSpeed, 0);
@@ -119,7 +129,7 @@ public class Player : MonoBehaviour
 					break;
 			}
 			
-        } else if(other.gameObject.tag == "Enemy"){
+        } else if(other.gameObject.tag == "Enemy" && !isInvincible){
             Debug.Log("Game Over");
 			FindObjectOfType<ArcadeModeManager>().gameOver = true;
             FindObjectOfType<ArcadeModeManager>().GameOver();
