@@ -24,6 +24,11 @@ public class GameManager : MonoBehaviour {
     public int campaignLvlToLoad;
     public List<bool> levelStatus = new List<bool>();
     public bool crabLvl01Beat = false;
+
+    /// <summary>
+    /// Cheats bool actives
+    /// </summary>
+    public bool isInvincible = false;
 	void Awake(){ 
         //Check if instance already exists
             if (instance == null)

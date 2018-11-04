@@ -26,11 +26,13 @@ public class MainMenuButtonManager : MonoBehaviour {
 	public GameObject cheatBtn;
 	public Canvas moreInfoCanvas;
 	public Canvas highScoresCanvas;
+	public Canvas privacyCanvas;
 
 	void Start(){
 		cheatBtn.SetActive(false);
 		moreInfoCanvas.enabled = false;
 		highScoresCanvas.enabled = false;
+		privacyCanvas.enabled = false;
 	}
 	public void LoadCampaignLevelSelectButton(){
 		SceneManager.LoadScene("LevelSelect");
@@ -59,8 +61,28 @@ public class MainMenuButtonManager : MonoBehaviour {
 		moreInfoCanvas.enabled = false;
 	}
 
+	public void ShowPrivacuPolicy(){
+		privacyCanvas.enabled = true;
+	}
+
+	public void ClosePrivacuPolicy(){
+		privacyCanvas.enabled = false;
+	}
+
     public void PortfolioPage(){
         Application.OpenURL("http://jonthompson.ca/");
+    }
+
+	public void OpenSupportPage(){
+        Application.OpenURL("http://jonthompson.ca/contact.html");
+    }
+
+	public void OpenGamesPage(){
+        Application.OpenURL("http://jonthompson.ca/games.html");
+    }
+
+	public void OpenUnityPrivayPage(){
+        Application.OpenURL("https://unity3d.com/legal/privacy-policy");
     }
 
 	public void CheatEnableButton(){
