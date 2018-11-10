@@ -111,6 +111,7 @@ MonoBehaviour:
   numOfShotsTaken: 0
   moveLeftBtn: {fileID: 0}
   moveRightBtn: {fileID: 0}
+  isInvincible: 0
 --- !u!114 &114537487228539916
 MonoBehaviour:
   m_ObjectHideFlags: 1
